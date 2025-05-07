@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Guru99TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="WebAutomationTests(failed)">
+    <classes>
+      <class name="com.WebAutomation.Com.Guru99.cardNumberPage">
+        <methods>
+          <include name="windowHandle2"/>
+        </methods>
+      </class> <!-- com.WebAutomation.Com.Guru99.cardNumberPage -->
+      <class name="com.WebAutomation.Com.Guru99.AppTest">
+        <methods>
+          <include name="windowHandle"/>
+          <include name="captureScreenshotOnFailure"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.WebAutomation.Com.Guru99.AppTest -->
+    </classes>
+  </test> <!-- WebAutomationTests(failed) -->
+</suite> <!-- Failed suite [Guru99TestSuite] -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <!-- Changed to 12-hour format with AM/PM -->
+            <PatternLayout pattern="%d{hh:mm:ss a} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <File name="FileLogger" fileName="logs/testlog.log" append="true">
+            <!-- Changed to 12-hour format with AM/PM -->
+            <PatternLayout pattern="%d{yyyy-MM-dd hh:mm:ss a} %-5level %logger{36} - %msg%n"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+        </Root>
+    </Loggers>
+</Configuration>
